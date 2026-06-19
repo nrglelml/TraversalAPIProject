@@ -11,7 +11,7 @@ namespace TraversalApiProject.DAL.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=localhost\\SQLEXPRESS;database=TraversalDB;Trusted_Connection=True;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("server=localhost\\SQLEXPRESS;database=TraversalAPIDB;Trusted_Connection=True;TrustServerCertificate=True;");
         }
         public DbSet<Visitor> Visitors { get; set; }
     }
